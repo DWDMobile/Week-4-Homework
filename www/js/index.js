@@ -16,8 +16,25 @@ var app = {
     //put your old initialize code in here, will be executed when your app is ready
     //(kind of like document ready!)
     onDeviceReady: function() {
-      
+        
+$( document ).ready(function() {
+    $('#calender').hide();
+var toggle = false; //toggle false means calender is hidden
+console.log("hidden");
+//jquery, # for id, . for class
 
+$( "#calButton" ).click(function() {
+    if(toggle == false){
+        $('#calender').show();
+        toggle = true;
+    }else{
+        $( "#calender" ).hide( "slow" );
+        toggle = false;
+    }
+  
+});
+
+});
     }
     
 }
