@@ -38,18 +38,58 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
+    <!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6/css/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+
+    <title>Tasky</title>
 </head>
 
 <body>
     <div class="app">
-    <!-- put your content here! -->
-
-
+      <div class="container">
+        <!-- Landing Screen -->
+        <div class="projects">
+          <div class="row">
+            <div class="col-xs-12 title header" style="text-align:center">
+              Tasky
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-xs-12 project">
+                <div class="projectName">
+                  Project Name
+                </div>
+                <button type="button" id="newTask" class="btn btn-primary btn-lg btn-block">
+                  <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row row-proj">
+            <button type="button" id="newProj" class="btn btn-primary btn-lg btn-block">
+              <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
     </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jqueryFinger/dist/jquery.finger.js"></script>
+
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
