@@ -12,4 +12,50 @@ body {
     padding:0px;
     width:100%;
 }
-
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+body {
+  display: table;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container{
+  /*min-height: 667px;*/
+  height:100%;
+}
+.projects{
+  /*min-height: 667px;*/
+  height:100%;
+}
+.project{
+  height: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(221,221,221);
+  background-color: rgb(246,246,246);
+  padding: 10px;
+}
+.projectName{
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+.title{
+  background-color: rgb(200,200,200);
+  text-align: center;
+  font-size: 22px;
+}
+.ui-btn{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
