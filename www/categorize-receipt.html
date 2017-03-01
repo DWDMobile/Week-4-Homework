@@ -47,12 +47,17 @@
 <body>
 
     <div class="app">
-       		<div class="section splash light-blue-background">
+    	<div class="section header white-background">
 			<div class="container">
 				<div class="row">
-					<div class="column large-12 medium-12 small-12">
+					<div class="column large-4 medium-4 small-4 float-left">
+						<a href="select-corners.html"><img src="images/left-arrow.png"></a>
+					</div>
+					<div class="column large-4 medium-4 small-4">
 						<h1>Poppy</h1>
-						<h2>Your Proof of Purchase</h2>
+					</div>
+					<div class="column large-4 medium-4 small-4">
+					<!-- empty column -->
 					</div>
 				</div>
 			</div>
@@ -66,11 +71,37 @@
 			</div>
 		</div>
 
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="column large-12 medium-12 small-12">
+						<form method="POST" action="/formpost">
+							<div class="row">
+								<label>Vendor Name</label>
+								<input type="text" name="name">
+							</div>
+
+							<div class="row">
+								<label>Date</label>
+								<input type="date" name="date">
+							</div>
+
+<!-- submit button via input tag -->
+							<div class="row submit-button">
+								<input type="submit" name="submitButton" value="Save">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- double up icon on footer bar as submit button? -->
 		<div class="section footer blue-background">
 			<div class="container">
 				<div class="row">
 					<div class="column large-12 medium-12 small-12">
-						<a href="capture-photo.html"><img src="images/right-arrow.png"></a>
+						<a href="details-of-receipt.html"><img src="images/save.png"></a>
 					</div>
 				</div>
 			</div>
@@ -85,9 +116,4 @@
     </script>
 </body>
 
-</html>
-
-		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/script.js"></script>
-    </body>
 </html>
