@@ -6,10 +6,235 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    font-size:12px;
+    /*font-size:12px;*/
     height:100%;
-    margin:0px;
+    /*margin:0px;*/
     padding:0px;
     width:100%;
 }
+
+html{
+    background-color:#eee;
+    font-family: 'Quicksand', sans-serif;
+    font-size:16px;
+}
+body{
+    /*width:100%;*/
+    max-width:650px;
+    background-color:#fff;
+    margin:0 auto;
+    box-shadow:0 0 10px #000;
+    min-height: 100vh;
+}
+
+.app nav{
+    height:30px;
+    background-color:#00A29B;
+    font-size:22px;
+    padding-top:25px;
+    width:100%;
+    max-width:650px;
+    position: absolute;
+}
+
+.app nav a{
+    margin:10px;
+    top: -5px;
+    color:#fff;
+    text-decoration:none;
+    position:relative;
+
+
+}
+
+.app nav a:last-child{
+    float:right;
+    top:-8px;
+}
+
+.app nav img{
+    width:35px;
+}
+
+.app section{
+    display:none;
+    padding-top:100px;
+}
+
+.app section:target{
+    display:block;
+
+}
+
+
+.app label{
+    display:block;
+    margin-top: 25px;
+    clear:both;
+}
+
+.app input{
+    width:220px;
+    clear:both;
+}
+.app input[type='button'], .app input[type='submit']{
+    width:80px;
+    margin-top: 35px;
+    float:right;
+    background-color: #ddd;
+
+}
+
+.app form{
+    display:block;
+    margin:60px auto;
+    width:220px;
+
+
+}
+
+.app form:last-child{
+    padding-bottom:80px;
+}
+
+.app form a{
+    display:block;
+    float:right;
+    margin-bottom:20px;
+
+}
+
+.app form a:not(.nobutton){
+
+    width:105px;
+    padding:10px 0;
+    color:black;
+    background-color:#d3d3d3;
+    text-align: center;
+    text-decoration: none;
+    clear:both;
+    margin-top:25px;
+
+
+}
+
+.app form select{
+    width:100%;
+    font-size:14px;
+}
+
+
+
+.app textarea{
+width:250px;
+height:50px;
+position:relative;
+margin-left:-45px;
+
+
+}
+
+.app img.support {
+    display: block;
+    margin: 0 auto;
+    width:250px;
+    position: relative;
+    margin-top:90px;
+
+
+}
+
+
+
+
+.app #choose a{
+width:30%;
+display:inline-block;
+color:white;
+text-decoration:none;
+font-size: 22px;
+padding:80px 0;
+margin-top:15px;
+min-width:200px;
+
+
+
+}
+
+.app #choose a[href^="#get"]{
+background-color:#50C995;
+
+}
+.app #choose a[href^="#give"]{
+background-color:#00BBBB;
+}
+
+.app p{
+text-align:center;
+margin: 50px 25px 0 25px;
+
+
+}
+
+.app li img{
+width:40px;
+position:relative;
+margin-bottom:-10px;
+}
+
+.app #giveSupport1 li img:last-child{
+width:20px;
+margin-bottom:-5px;
+
+}
+
+
+
+.app ul{
+list-style-type: none;
+margin-top: 100px;
+}
+.app li{
+margin-bottom: 20px;
+}
+
+.app #getSupport2 textarea, .app #giveSupport2 textarea{
+margin-top: 400px;
+width:100%;
+margin-left:2px;
+}
+
+.app #giveSupport2 li, .app #getSupport2 li {
+margin-left: 30px;
+
+
+}
+
+.app #giveSupport2 li:first-child, .app #getSupport2 li:first-child {
+margin-left: 0;
+position:relative;
+margin-top: -100px
+}
+
+.app #giveSupport1 {
+
+text-decoration: none;
+}
+
+.app #getSupport2 li:first-child {
+margin-left: 0;
+position:relative;
+margin-top: -100px
+}
+
+.nobutton {
+color:black;
+font-size:18px;
+}
+
+.app nav a[href='#back'] img {
+width:30px;    
+}
+
+
 
